@@ -1,16 +1,17 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import BoardPage from './pages/BoardPage'
 
 function App() {
-    const hello = '안녕하세요'
-
-    const style = {
-        fontSize: 30,
-    }
-
     return (
         <>
-            <div style={style}>{hello}</div>
-            <div>{hello}</div>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<HomePage />}></Route>
+                    <Route path="/board" element={<BoardPage />}></Route>
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }
