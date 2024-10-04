@@ -14,8 +14,8 @@ const Counter = () => {
     return (
         <div>
             <h1>{number}</h1>
-            <button onClick={onIncrease}>증가</button>
-            <button onClick={onDecrease}>감소</button>
+            <button onClick={onIncrease}>1증가</button>
+            <button onClick={onDecrease}>1감소</button>
         </div>
     )
 }

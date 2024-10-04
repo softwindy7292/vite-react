@@ -1,23 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Counter2 = () => {
-    let num = 0
+    const [number, setNumber] = useState(0)
 
     const onIncrease = () => {
-        num++
-        console.log(num + '증가됨')
+        setNumber(number + 2)
     }
 
     const onDecrease = () => {
-        num--
-        console.log(num + '감소됨')
+        setNumber(number - 2)
     }
 
     return (
         <div>
-            <h1>{num}</h1>
-            <button onClick={onIncrease}>증가</button>
-            <button onClick={onDecrease}>감소</button>
+            <h1>{number}</h1>
+            <button onClick={onIncrease}>2증가</button>
+            <button onClick={onDecrease}>2감소</button>
         </div>
     )
 }
