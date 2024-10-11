@@ -8,6 +8,12 @@ import CounterPage from '../pages/CounterPage'
 import InputPage from './../pages/InputPage'
 import GradeInputPage from './../pages/GradeInputPage'
 import UseRefPage from '../pages/UseRefPage'
+import UseRefPage2 from '../pages/UseRefPage2'
+import UserArrayPage from '../pages/UserArrayPage'
+import UserCrudPage from '../pages/UserCrudPage'
+import UseEffectPage from '../pages/UseEffectPage'
+import AxiosPage from '../pages/AxiosPage'
+import AxiosClientPage from '../pages/AxiosClientPage'
 
 //React Routes, Route 사용시 배열로 관리하기
 const routes = [
@@ -55,6 +61,32 @@ const routes = [
         path: '/useref',
         element: <UseRefPage />,
         title: 'useRef예제1',
+    },
+    {
+        path: '/useref2',
+        element: <UseRefPage2 />,
+        title: 'useRef예제2',
+    },
+    {
+        path: '/userpage',
+        //element: <UserArrayPage />,
+        element: <UserCrudPage />,
+        title: 'user페이지',
+    },
+    {
+        path: '/axiosget',
+        element: <AxiosPage />,
+        title: 'AxiosGet',
+    },
+    {
+        path: '/axiosclient',
+        element: <AxiosClientPage />,
+        title: 'Axios클라이언트',
+    },
+    {
+        path: '/effect',
+        element: <UseEffectPage />,
+        title: '유즈이펙트(useEffect)',
     },
 ]
 
